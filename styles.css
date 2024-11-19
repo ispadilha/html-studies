@@ -1,0 +1,35 @@
+header {
+    background-color: #bebebe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    background-color: #dedede;
+    padding: 10px;
+}
+
+footer {
+    background-color: #bebebe;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-title {
+    color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    color: #555
+}
+
+.image {
+    display: flex;
+    margin: 50px auto;
+    height: 500px;
+    width: 500px;
+}
