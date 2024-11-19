@@ -33,3 +33,8 @@ footer {
     height: 500px;
     width: 500px;
 }
+
+.example-div {
+    background-color: aquamarine;
+    padding: 30px;
+}
