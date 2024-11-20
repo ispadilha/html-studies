@@ -10,22 +10,37 @@
 <body>
 
     <h2 class="title">Meta tags:</h2>
-    <p>Sintaticamente, são diferentes atributos dentro de uma meta tag.</p>
+    <p>Sintaticamente, são diferentes atributos dentro de uma tag "meta".</p>
     <p>São usados por navegadores, motores de busca e outros sistemas.</p>
-    <p>Ficam dentro da tag head do documento, e especificam: set de caracteres, descrição da página, palavras-chave, autor do documento, viewport, etc.</p>
+    <p>Ficam dentro da tag "head" do documento, e especificam: set de caracteres, descrição da página, palavras-chave, autor do documento, viewport, etc.</p>
     <p>Abaixo, seguem descrições de outras tags que são usadas dentro da tag head.</p>
     <hr>
 
-    <h2 class="title">A tag script:</h2>
-    <p>É uma tag específica para habilitar Javascript, conectando o arquivo html a um arquivo js.</p>
-    <p>É o que está permitindo a navegação entre diferentes páginas neste documento.</p>
-    <noscript>Existe também a tag noscript, que de certa forma é relacionada. Esta mensagem só será visível se não houver suporte a javascript.</noscript>
+    <h2 class="title">A tag de título:</h2>
+    <p>É onde se especifica o texto que aparece na aba do navegador.</p>
+    <p>É importante não confundir a tag "title" com o atributo "title", que é usado em diferentes tags para mostrar um tipo de "tooltip" ao hover do cursor.</p>
     <hr>
 
-    <h2 class="title">A tag base:</h2>
+    <h2 class="title">A tag "link":</h2>
+    <p>É usada para ligar outros arquivos ao documento em questão, como arquivos CSS para aplicar estilos, ou uma imagem para servir como "favicon".</p>
+    <hr>
+    
+    <h2 class="title">A tag "script":</h2>
+    <p>É uma tag específica para habilitar Javascript. Pode conectar o arquivo HTML a um arquivo JS, ou pode receber código Javascript diretamente.</p>
+    <p>É o que está permitindo a navegação entre diferentes páginas neste documento.</p>
+    <p>Pode ser usada dentro de uma destas tags: "head" ou "body" do documento. Esta decisão tem diferentes implicações, a serem aprofundadas em outros momentos e outros projetos, focados em Javascript ao invés de HTML.</p>
+    <noscript>Existe também a tag "noscript", que de certa forma é relacionada. Esta mensagem só será visível se não houver suporte a Javascript.</noscript>
+    <hr>
+
+    <h2 class="title">A tag "style":</h2>
+    <p>É usada para receber regras de CSS, escritas dentro da mesma, diretamente no documento, em vez de conectá-lo a um arquivo CSS externo. Este seria o caso descrito na tag "link", pois diferentemente da tag "script", a tag "style" não possui atributo para conectar um arquivo externo.</p>
+    <hr>
+
+    <h2 class="title">A tag "base":</h2>
     <p>É uma tag que especifica um caminho padrão para links.</p>
-    <p>Por exemplo, o link abaixo não possui um caminho especificado na sua própria tag, mas sim na tag base do documento:</p>
-    <a href="">Exemplo</a>
+    <p>Por exemplo, o link abaixo não possui um caminho especificado na sua própria tag, mas sim na tag "base" deste documento "Head & Meta":</p>
+    <a href="">Este link conduzirá ao caminho especificado na base.</a>
+    <p>Além disso, os links de navegação à esquerda também foram afetados pela tag "base" desta página, e exibirão um erro até serem novamente exibidos a partir de outra página, diferente desta.</p>
 
 </body>
 </html>
