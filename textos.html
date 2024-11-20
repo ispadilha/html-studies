@@ -9,147 +9,132 @@
 </head>
 
 <body>
-    <header title="header">
-        <h1 class="main-title">Tags HTML</h1>
-        <p>Documento montado com foco didático. As diferentes seções delimitadas por tags semânticas têm cores de fundo distintas.
-            Hover com o cursor sobre estas seções mostra os nomes/tags das mesmas.</p>
-        <hr>
-    </header>
+    <h2 class="title">Tags básicas de texto:</h2>
+    <h1>Título 1</h1>
+    <h2>Título 2</h2>
+    <h3>Título 3</h3>
+    <h4>Título 4</h4>
+    <h5>Título 5</h5>
+    <h6>Título 6</h6>
+    <p>Parágrafo</p>
+    <hr>
+    
+    <h2 class="title">Tags semânticas e de formatação de texto:</h2>
+    <br>
+    <i>Texto em itálico:</i><p>Não costumava ter semântica e era puramente visual. Segundo o instrutor, isso mudou e esta tag passou a ter alguma semântica.</p>
+    <br>
+    <em>Texto com ênfase:</em><p>É visualmente igual ao texto em itálico, porém a semântica desta tag é diferente.</p>
+    <br>
+    <b>Texto em negrito:</b><p>Segundo o instrutor, não chega a ser uma tag semântica; é uma tag puramente visual para exibir o texto assim, em negrito.</p>
+    <br>
+    <strong>Texto "forte":</strong><p>É visualmente igual ao texto em negrito, porém a semântica desta tag é diferente.</p>
+    <br>
+    <mark>Texto marcado:</mark><p>Texto que recebe este efeito de destaque. Porém, segundo o instrutor, este destaque é mais visual e não tanto semântico.</p>
+    <br>
+    <del>Texto "deletado":</del><p>Texto que teria sido excluído do documento. Costuma aparecer riscado.</p>
+    <br>
+    <ins>Texto "inserido":</ins><p>Texto que teria sido inserido no documento. Costuma aparecer sublinhado.</p>
+    <br>
+    <small>Texto pequeno:</small><p>Aparece com tamanho reduzido, ainda sem utilizar CSS.</p>
+    <br>
+    <sub>Texto sub-escrito:</sub>
+    <p>Parece com o texto pequeno descrito acima, mas sua principal característica é que é escrito um pouco "abaixo".</p>
+    <p>Por exemplo, comparar: C<small>6</small>H<small>12</small>O<small>6</small> e C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></p>
+    <p>Este é um exemplo de uso do texto sub-escrito: fórmulas químicas.</p>
+    <br>
+    <sup>Texto sobrescrito:</sup>
+    <p>Semelhante ao conceito acima, mas é escrito "um pouco acima". Costuma ser usado para inserir referências em textos<sup>[1]</sup>.</p>
+    <p>Poderia ser usado em fórmulas matemáticas, por exemplo, mas para isso existem outras soluções mais completas.</p>
+    <hr>
 
-    <main title="main">
-        <h2 class="title">Tags básicas de texto:</h2>
-        <h1>Título 1</h1>
-        <h2>Título 2</h2>
-        <h3>Título 3</h3>
-        <h4>Título 4</h4>
-        <h5>Título 5</h5>
-        <h6>Título 6</h6>
-        <p>Parágrafo</p>
-        <hr>
-        
-        <h2 class="title">Tags semânticas e de formatação de texto:</h2>
-        <br>
-        <i>Texto em itálico:</i><p>Não costumava ter semântica e era puramente visual. Segundo o instrutor, isso mudou e esta tag passou a ter alguma semântica.</p>
-        <br>
-        <em>Texto com ênfase:</em><p>É visualmente igual ao texto em itálico, porém a semântica desta tag é diferente.</p>
-        <br>
-        <b>Texto em negrito:</b><p>Segundo o instrutor, não chega a ser uma tag semântica; é uma tag puramente visual para exibir o texto assim, em negrito.</p>
-        <br>
-        <strong>Texto "forte":</strong><p>É visualmente igual ao texto em negrito, porém a semântica desta tag é diferente.</p>
-        <br>
-        <mark>Texto marcado:</mark><p>Texto que recebe este efeito de destaque. Porém, segundo o instrutor, este destaque é mais visual e não tanto semântico.</p>
-        <br>
-        <del>Texto "deletado":</del><p>Texto que teria sido excluído do documento. Costuma aparecer riscado.</p>
-        <br>
-        <ins>Texto "inserido":</ins><p>Texto que teria sido inserido no documento. Costuma aparecer sublinhado.</p>
-        <br>
-        <small>Texto pequeno:</small><p>Aparece com tamanho reduzido, ainda sem utilizar CSS.</p>
-        <br>
-        <sub>Texto sub-escrito:</sub>
-        <p>Parece com o texto pequeno descrito acima, mas sua principal característica é que é escrito um pouco "abaixo".</p>
-        <p>Por exemplo, comparar: C<small>6</small>H<small>12</small>O<small>6</small> e C<sub>6</sub>H<sub>12</sub>O<sub>6</sub></p>
-        <p>Este é um exemplo de uso do texto sub-escrito: fórmulas químicas.</p>
-        <br>
-        <sup>Texto sobrescrito:</sup>
-        <p>Semelhante ao conceito acima, mas é escrito "um pouco acima". Costuma ser usado para inserir referências em textos<sup>[1]</sup>.</p>
-        <p>Poderia ser usado em fórmulas matemáticas, por exemplo, mas para isso existem outras soluções mais completas.</p>
-        <hr>
+    <h2 class="title">Quebras de linha:</h2>
+    <p>É possível usá-las para ter maior espaçamento entre linhas de texto, como por exemplo entre os conceitos acima, ou aqui a seguir.</p>
+    <br>
+    <p>Estas quebras de linha também são feitas com uma tag HTML.</p>
+    <hr>
 
-        <h2 class="title">Quebras de linha:</h2>
-        <p>É possível usá-las para ter maior espaçamento entre linhas de texto, como por exemplo entre os conceitos acima, ou aqui a seguir.</p>
-        <br>
-        <p>Estas quebras de linha também são feitas com uma tag HTML.</p>
-        <hr>
+    <h2 class="title">Texto pré-formatado:</h2>
+    <p>Usando as tags de texto já vistas, os espaços em branco são ignorados. Para exibir texto pré-formatado, então, é utilizada uma tag própria:</p>
+    <pre>
+        My Bonnie lies over the ocean.
+    
+        My Bonnie lies over the sea.
+    
+        My Bonnie lies over the ocean.
+    
+        Oh, bring back my Bonnie to me.
+    </pre>
+    <p>(Fonte do poema de exemplo: W3Schools)</p>
+    <hr>
 
-        <h2 class="title">Texto pré-formatado:</h2>
-        <p>Usando as tags de texto já vistas, os espaços em branco são ignorados. Para exibir texto pré-formatado, então, é utilizada uma tag própria:</p>
-        <pre>
-            My Bonnie lies over the ocean.
-        
-            My Bonnie lies over the sea.
-        
-            My Bonnie lies over the ocean.
-        
-            Oh, bring back my Bonnie to me.
-        </pre>
-        <p>(Fonte do poema de exemplo: W3Schools)</p>
-        <hr>
+    <h2 class="title">Listas:</h2>
+    <p>Lista desordenada:</p>
+    <ul>
+        <li>Item</li>
+        <li>Outro item</li>
+        <li>Mais um item</li>
+    </ul>
+    <br>
+    <p>Lista ordenada:</p>
+    <ol>
+        <li>Primeiro item</li>
+        <li>Segundo item</li>
+        <li>Terceiro item</li>
+    </ol>
+    <br>
+    <p>Lista descritiva:</p>
+    <dl>
+        <dt>Café</dt>
+        <dd>Geralmente quente, mas existem receitas geladas. É comum se adicionar leite.</dd>
+        <dt>Chá</dt>
+        <dd>Quente ou gelado. É raro se adicionar leite.</dd>
+    </dl>
+    <hr>
 
-        <h2 class="title">Listas:</h2>
-        <p>Lista desordenada:</p>
-        <ul>
-            <li>Item</li>
-            <li>Outro item</li>
-            <li>Mais um item</li>
-        </ul>
-        <br>
-        <p>Lista ordenada:</p>
-        <ol>
-            <li>Primeiro item</li>
-            <li>Segundo item</li>
-            <li>Terceiro item</li>
-        </ol>
-        <br>
-        <p>Lista descritiva:</p>
-        <dl>
-            <dt>Café</dt>
-            <dd>Geralmente quente, mas existem receitas geladas. É comum se adicionar leite.</dd>
-            <dt>Chá</dt>
-            <dd>Quente ou gelado. É raro se adicionar leite.</dd>
-        </dl>
-        <hr>
+    <h2 class="title">Links:</h2>
+    <p>Esta tag permite incluir um link, como pode ser conferido <a href="http://github.com/ispadilha">clicando  aqui</a>.</p>
+    <p>Pode ser usada para transformar outros elementos em links, como por exemplo imagens, ao invés de texto.</p>
+    <p>Possui atributos para definir onde será aberta a página ou caminho de destino.</p>
+    <p>Os links podem conduzir a arquivos do proṕrio projeto, diferentes partes do documento, outros caminhos na internet, etc.</p>
+    <p>Podem também levar a envio de e-mail ou contato telefônico, mas estes casos ainda existem por razões históricas, e são pouco usados atualmente.</p>
+    <p>Existe uma tag HTML para criar botões:</p>
+    <button>Exemplo</button>
+    <p>No entanto, é importante saber que existem diferenças semânticas entre "âncoras" (links) e botões. Estes últimos podem ter outras funcionalidades que vão além de conduzir a um link. Habilitar ou submeter formulários, por exemplo.</p>
+    <hr>
 
-        <h2 class="title">Links:</h2>
-        <p>Esta tag permite incluir um link, como pode ser conferido <a href="http://github.com/ispadilha">clicando  aqui</a>.</p>
-        <p>Pode ser usada para transformar outros elementos em links, como por exemplo imagens, ao invés de texto.</p>
-        <p>Possui atributos para definir onde será aberta a página ou caminho de destino.</p>
-        <p>Os links podem conduzir a arquivos do proṕrio projeto, diferentes partes do documento, outros caminhos na internet, etc.</p>
-        <p>Podem também levar a envio de e-mail ou contato telefônico, mas estes casos ainda existem por razões históricas, e são pouco usados atualmente.</p>
-        <p>Existe uma tag HTML para criar botões:</p>
-        <button>Exemplo</button>
-        <p>No entanto, é importante saber que existem diferenças semânticas entre "âncoras" (links) e botões. Estes últimos podem ter outras funcionalidades que vão além de conduzir a um link. Habilitar ou submeter formulários, por exemplo.</p>
-        <hr>
+    <h2 class="title">Tags para citações e relacionadas:</h2>
+    <p>Os exemplos abaixo têm como fonte o W3Schools.</p>
+    <b>Citação em bloco de texto:</b>
+    <p>Here is a quote from WWF's website:</p>
+    <blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+    </blockquote>
+    <b>Citação curta:</b>
+    <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+    <b>Tag de abreviação:</b>
+    <p>Costuma ser usada para siglas, e possui um atributo para exibir o texto completo das mesmas ao hover do cursor.</p>
+    <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+    <b>Tag para informações de contato:</b>
+    <p>Pode receber diversos dados para contato. Costuma ser exibida pelos navegadores em itálico.</p>
+    <address>
+        Written by John Doe.<br>
+        Visit us at:<br>
+        Example.com<br>
+        Box 564, Disneyland<br>
+        USA
+    </address>
+    <br>
+    <b>Tag para título de obra (literária, artística, etc):</b>
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+    <b>Tag para "Bi-Directional-Override":</b>
+    <p>Funciona redefinindo a direção do texto.</p>
+    <bdo dir="rtl">This text will be written from right to left</bdo>
+    <hr>
 
-        <h2 class="title">Tags para citações e relacionadas:</h2>
-        <p>Os exemplos abaixo têm como fonte o W3Schools.</p>
-        <b>Citação em bloco de texto:</b>
-        <p>Here is a quote from WWF's website:</p>
-        <blockquote cite="http://www.worldwildlife.org/who/index.html">
-        For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
-        </blockquote>
-        <b>Citação curta:</b>
-        <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
-        <b>Tag de abreviação:</b>
-        <p>Costuma ser usada para siglas, e possui um atributo para exibir o texto completo das mesmas ao hover do cursor.</p>
-        <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
-        <b>Tag para informações de contato:</b>
-        <p>Pode receber diversos dados para contato. Costuma ser exibida pelos navegadores em itálico.</p>
-        <address>
-            Written by John Doe.<br>
-            Visit us at:<br>
-            Example.com<br>
-            Box 564, Disneyland<br>
-            USA
-        </address>
-        <br>
-        <b>Tag para título de obra (literária, artística, etc):</b>
-        <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
-        <b>Tag para "Bi-Directional-Override":</b>
-        <p>Funciona redefinindo a direção do texto.</p>
-        <bdo dir="rtl">This text will be written from right to left</bdo>
-        <hr>
-
-        <h2>Comentários em HTML:</h2>
-        <!-- Comentários em HTML são feitos desta forma. -->
-        <!-- <p>"Comentar" linhas pode servir para "esconder" elementos</p>
-        <p>Podem ser várias linhas, inclusive.</p> -->
-        <p>A sintaxe apropriada <!-- que é esta aqui --> é usada para escrever comentários, não visíveis no documento aberto através do navegador. <!-- Porém visíveis no arquivo HTML ou no DevTools. --></p>
-    </main>
-
-    <footer title="footer">
-        <p>A ideia deste trabalho é reunir todas as tags e ser uma referência completa de HTML.</p>
-        <p>A aparência e estética não são prioridade aqui em HTML, e sim em outros projetos com foco em CSS.</p>
-        <p>Este é um projeto em andamento por <a href="https://github.com/ispadilha">Israel Padilha</a>.</p>
-    </footer>
+    <h2>Comentários em HTML:</h2>
+    <!-- Comentários em HTML são feitos desta forma. -->
+    <!-- <p>"Comentar" linhas pode servir para "esconder" elementos</p>
+    <p>Podem ser várias linhas, inclusive.</p> -->
+    <p>A sintaxe apropriada <!-- que é esta aqui --> é usada para escrever comentários, não visíveis no documento aberto através do navegador. <!-- Porém visíveis no arquivo HTML ou no DevTools. --></p>
 </body>
 </html>
