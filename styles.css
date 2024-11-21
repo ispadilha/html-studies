@@ -60,6 +60,10 @@ aside {
     border: 10px double white;
 }
 
+summary {
+    cursor: pointer;
+}
+
 .main-title {
     color: #333;
     display: flex;
@@ -87,4 +91,10 @@ aside {
     background-color: #bebebe;
     border: 10px double black;
     padding: 20px;
+    margin-top: 20px;
+}
+
+.example-span {
+    background-color: black;
+    color: white
 }

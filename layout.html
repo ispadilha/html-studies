@@ -10,7 +10,7 @@
     
     <div class="flex-div">
         <div>
-            <section class="example-section" title="section">
+            <section title="section">
                 <h2 class="title">Linhas horizontais:</h2>
                 <p>Estas linhas que usarei para organizar os conteúdos, como esta logo abaixo, também são feitas com tags HTML.</p>
                 <p>Foram historicamente chamadas de "linhas horizontais", porque este é o padrão, mas podem ter esta orientação alterada usando CSS.</p>
@@ -27,13 +27,36 @@
                 <p>No entanto, é importante saber que existem diferenças semânticas entre "âncoras" (links) e botões. Estes últimos podem ter outras funcionalidades que vão além de conduzir a um link. Habilitar ou submeter formulários, por exemplo.</p>
                 <hr>
         
+                <h2 class="title">Tags de detalhes e sumários:</h2>
+                <p>São usadas para englobar conteúdos colapsáveis. Segue um exemplo abaixo:</p>
+                <details>
+                    <summary>What is HTML?</summary>
+                    <p>HTML stands for HyperText Markup Language. It is the standard language for creating webpages.</p>
+                </details>
+                <details>
+                    <summary>What is the purpose of the "details" tag?</summary>
+                    <p>The "details" tag is used to create collapsible content that can be toggled by the user.</p>
+                </details>
+                <details>
+                    <summary>Can I use the "summary" tag outside of the "details" tag?</summary>
+                    <p>No, the "summary" tag must be used as a direct child of the "details" tag. Otherwise, it won't function as expected.</p>
+                </details>
+                <br>
+                <hr>
+
                 <h2 class="title">Divisórias:</h2>
                 <p>São um tipo básico e genérico para delimitação de conteúdo. São versáteis e não são semânticas (por isso "genéricas").</p>
+                <p>Têm por padrão o tipo de display "block", ou seja, "iniciam uma nova linha", ocupando todo um espaço horizontal disponível.</p>
                 <p>Outras técnicas de layout são: CSS frameworks, CSS float, CSS grid.</p>
                 <div class="example-div">
                     <p>Este é um exemplo de div. Por ser genérica e versátil, pode envolver todo tipo de conteúdo, não apenas texto.</p>
-                    <p>É o uso de divs que está permitindo a organização das diferentes tags semânticas de layout nesta página.</p>
+                    <p>É o uso de divs que está permitindo a organização das diferentes tags semânticas de layout nesta página, descritas aqui à direita.</p>
                 </div>
+                <hr>
+
+                <h2 class="title">A tag "span":</h2>
+                <p>É outra tag genérica (não semântica) que tem por padrão o tipo de display "inline", ou seja, não "inicia uma nova linha". Em inglês, "span" significa <span class="example-span">"extensão"</span>.</p>
+                <p>É comumente usada para <span class="example-span">delimitar ou aplicar estilos por uma determinada extensão</span> de algum elemento definido por outra tag.</p>
                 <hr>
             </section>
             <article class="example-article" title="article">
@@ -43,13 +66,13 @@
             </article>
         </div>
         <div>
-            <aside>
+            <aside title="aside">
                 <h2 class="title">header:</h2>
-                <p>O cabeçalho acima.</p>
+                <p>O cabeçalho, acima.</p>
                 <hr>
 
                 <h2 class="title">nav:</h2>
-                <p>A navegação lateral à esquerda.</p>
+                <p>A navegação lateral, à esquerda.</p>
                 <hr>
 
                 <h2 class="title">main:</h2>
@@ -61,7 +84,7 @@
                 <hr>
 
                 <h2 class="title">article:</h2>
-                <p>Um container de informação distinta. Usei como exemplo para englobar o Iframe aqui à esquerda.</p>
+                <p>Um container de informação distinta. Usei como exemplo para englobar o Iframe aqui à esquerda e abaixo.</p>
                 <hr>
 
                 <h2 class="title">aside:</h2>
