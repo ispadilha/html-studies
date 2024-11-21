@@ -13,11 +13,10 @@
     <h2 class="title">Imagens:</h2>
     <p>Podem ser inseridas em documentos HTML por meio da tag própria, com suas características e atributos. Um deles é relacionado a uma descrição da imagem, para casos de falha no carregamento ou acessibilidade.</p>
     <p>Existem atributos para definir altura e largura, porém é usual e recomendado que todas as manipulações visuais sejam delegadas ao CSS.</p>
-    <img class="image" usemap="#exemplo" src="./dalle_code.webp">
-    
+    <img class="image" usemap="#exemplo" src="./dalle_code.webp" alt="Imagem de pessoa escrevendo códigos no computador.">
     <hr>
 
-    <h2 class="title">Image maps:</h2>
+    <h2 class="title">"Image maps:"</h2>
     <p>São imagens com diferentes áreas clicáveis. Isso é feito por uma combinação de atributos e tags HTML. A imagem acima é um exemplo, com áreas clicáveis no monitor e na cabeça.</p>
     <p>As áreas clicáveis podem conduzir a outros documentos ou disparar funções em Javascript.</p>
 
@@ -25,19 +24,25 @@
         <area shape="rect" coords="0,85,235,315" alt="Códigos" href="http://github.com">
         <area shape="circle" coords="390,90,90" alt="Desenvolvedor" href="http://github.com/ispadilha">
     </map>
-
     <hr>
 
-    <h2 class="title">Figuras:</h2>
+    <h2 class="title">"Gravuras:"</h2>
     <p>Estas são outras tags usadas para mostrar imagens no documento. São aceitas diferentes fontes (caminhos para arquivos) e o navegador irá exibir a mais apropriada.</p>
-    <p>Neste exemplo, a figura exibida depende do tamanho da tela do aparelho.</p>
+    <p>Neste exemplo, a imagem exibida depende do tamanho da tela do aparelho.</p>
 
     <picture class="image">
         <source media="(min-width: 1200px)" srcset="./dalle_browse_large.webp">
         <source media="(min-width: 600px)" srcset="./dalle_browse_medium.webp">
         <img src="./dalle_browse_small.webp" alt="Imagem de pessoa navegando na internet.">
     </picture>
+    <hr>
 
+    <h2 class="title">"Figuras:"</h2>
+    <p>Mais tags usadas para exibir imagens. Neste caso, são próprias para expressar uma imagem acompanhada de uma descrição.</p>
+    <figure class="image">
+        <img src="./dalle_caption.webp" alt="Imagem de pessoa consultando figuras em um livro.">
+        <figcaption>Exemplo de imagem relacionada a figuras com legendas que lhes descrevem.</figcaption>
+      </figure> 
     <hr>
 
     <h2 class="title">Favicons:</h2>

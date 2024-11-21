@@ -76,7 +76,8 @@ summary {
 
 .image {
     display: flex;
-    margin: 50px auto;
+    flex-direction: column;
+    margin: 100px auto;
     height: 500px;
     width: 500px;
 }
