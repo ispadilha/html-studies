@@ -8,30 +8,71 @@
 </head>
 <body>
     
-    <h2 class="title">Linhas horizontais:</h2>
-    <p>Estas linhas que usarei para organizar os conteúdos, como esta logo abaixo, também são feitas com tags HTML.</p>
-    <p>Foram historicamente chamadas de "linhas horizontais", porque este é o padrão, mas podem ter esta orientação alterada usando CSS.</p>
-    <hr>
-    
-    <h2 class="title">Links:</h2>
-    <p>Esta tag permite incluir um link, como pode ser conferido <a href="http://github.com/ispadilha">clicando  aqui</a>.</p>
-    <p>Pode ser usada para transformar outros elementos em links, como por exemplo imagens, ao invés de texto.</p>
-    <p>Possui atributos para definir onde será aberta a página ou caminho de destino.</p>
-    <p>Os links podem conduzir a arquivos do proṕrio projeto, diferentes partes do documento, outros caminhos na internet, etc.</p>
-    <p>Podem também levar a envio de e-mail ou contato telefônico, mas estes casos ainda existem por razões históricas, e são pouco usados atualmente.</p>
-    <p>Existe uma tag HTML para criar botões:</p>
-    <button>Exemplo</button>
-    <p>No entanto, é importante saber que existem diferenças semânticas entre "âncoras" (links) e botões. Estes últimos podem ter outras funcionalidades que vão além de conduzir a um link. Habilitar ou submeter formulários, por exemplo.</p>
-    <hr>
-    
-    <h2 class="title">Divisórias:</h2>
-    <p>São um tipo básico e genérico para delimitação de conteúdo. São versáteis e não são semânticas (por isso "genéricas").</p>
-    <div class="example-div"><p>Este é um exemplo de div. Por ser genérica e versátil, pode envolver todo tipo de conteúdo, não apenas texto.</p></div>
-    <hr>
+    <div class="flex-div">
+        <div>
+            <section class="example-section" title="section">
+                <h2 class="title">Linhas horizontais:</h2>
+                <p>Estas linhas que usarei para organizar os conteúdos, como esta logo abaixo, também são feitas com tags HTML.</p>
+                <p>Foram historicamente chamadas de "linhas horizontais", porque este é o padrão, mas podem ter esta orientação alterada usando CSS.</p>
+                <hr>
+        
+                <h2 class="title">Links:</h2>
+                <p>Esta tag permite incluir um link, como pode ser conferido <a href="http://github.com/ispadilha">clicando  aqui</a>.</p>
+                <p>Pode ser usada para transformar outros elementos em links, como por exemplo imagens, ao invés de texto.</p>
+                <p>Possui atributos para definir onde será aberta a página ou caminho de destino.</p>
+                <p>Os links podem conduzir a arquivos do proṕrio projeto, diferentes partes do documento, outros caminhos na internet, etc.</p>
+                <p>Podem também levar a envio de e-mail ou contato telefônico, mas estes casos ainda existem por razões históricas, e são pouco usados atualmente.</p>
+                <p>Existe uma tag HTML para criar botões:</p>
+                <button>Exemplo</button>
+                <p>No entanto, é importante saber que existem diferenças semânticas entre "âncoras" (links) e botões. Estes últimos podem ter outras funcionalidades que vão além de conduzir a um link. Habilitar ou submeter formulários, por exemplo.</p>
+                <hr>
+        
+                <h2 class="title">Divisórias:</h2>
+                <p>São um tipo básico e genérico para delimitação de conteúdo. São versáteis e não são semânticas (por isso "genéricas").</p>
+                <p>Outras técnicas de layout são: CSS frameworks, CSS float, CSS grid.</p>
+                <div class="example-div">
+                    <p>Este é um exemplo de div. Por ser genérica e versátil, pode envolver todo tipo de conteúdo, não apenas texto.</p>
+                    <p>É o uso de divs que está permitindo a organização das diferentes tags semânticas de layout nesta página.</p>
+                </div>
+                <hr>
+            </section>
+            <article class="example-article" title="article">
+                <h2 class="title">Iframes:</h2>
+                <p>Esta é uma tag usada para exibir uma página dentro de outra página. Um iframe pode ser usado como alvo ("target") de um link.</p>
+                <iframe src="http://w3schools.com" name="iframe_exemplo" height="300px" width="100%" title="Iframe de exemplo"></iframe>
+            </article>
+        </div>
+        <div>
+            <aside>
+                <h2 class="title">header:</h2>
+                <p>O cabeçalho acima.</p>
+                <hr>
 
-    <h2 class="title">Iframes:</h2>
-    <p>Esta é uma tag usada para exibir uma página dentro de outra página. Um iframe pode ser usado como alvo ("target") de um link.</p>
-    <iframe src="http://w3schools.com" name="iframe_exemplo" height="300px" width="100%" title="Iframe de exemplo"></iframe>
+                <h2 class="title">nav:</h2>
+                <p>A navegação lateral à esquerda.</p>
+                <hr>
+
+                <h2 class="title">main:</h2>
+                <p>O container principal, ao centro.</p>
+                <hr>
+
+                <h2 class="title">section:</h2>
+                <p>Qualquer delimitação de seção, semelhante a div, porém mais semântico.</p>
+                <hr>
+
+                <h2 class="title">article:</h2>
+                <p>Um container de informação distinta. Usei como exemplo para englobar o Iframe aqui à esquerda.</p>
+                <hr>
+
+                <h2 class="title">aside:</h2>
+                <p>Tag usada para um container à parte e "ao lado". Neste exemplo, é aqui mesmo: nesta parte à direita com estas descrições de tags.</p>
+                <hr>
+
+                <h2 class="title">footer:</h2>
+                <p>O rodapé, abaixo.</p>
+            </aside>
+        </div>
+    </div>
 
 </body>
 </html>

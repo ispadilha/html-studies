@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 header {
     background-color: #bebebe;
     display: flex;
@@ -26,7 +30,6 @@ nav {
     width: 200px;
     background-color: #dedede;
     padding: 10px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
 }
 
 nav ul {
@@ -46,6 +49,15 @@ nav ul li a {
 
 nav ul li a:hover {
     color: #007BFF;
+}
+
+aside {
+    height: 100%;
+    width: 400px;
+    background-color: #dedede;
+    padding: 20px;
+    text-align: center;
+    border: 10px double white;
 }
 
 .main-title {
@@ -69,4 +81,10 @@ nav ul li a:hover {
     background-color: black;
     color: white;
     padding: 30px;
+}
+
+.example-article {
+    background-color: #bebebe;
+    border: 10px double black;
+    padding: 20px;
 }
