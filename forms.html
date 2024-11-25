@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <h2 class="title">Formulários</h2>
+    <p>São geralmente usados para receber dados do usuário, com o auxílio de diferentes elementos.</p>
+    <p>Estes podem ser: campos de texto, radio buttons, checkboxes, botão de submeter formulário, etc.</p>
+    <hr>
+
+    <h2 class="title">"Inputs"</h2>
+    <p>São os elementos de formulários mais usados, e sintaticamente trata-se de uma tag versátil, cujo tipo é definido por um atributo.</p>
+    <p>É importante notar que eles precisam do atributo "name" para que seus dados sejam corretamente identificados ao serem enviados.</p>
+    <p>Uma exceção é o input do tipo "submit", que funciona sem o atributo "name", principalmente se for único.</p>
+    <p>Este tipo de input pode ter atributo "name", principalmente se houver mais de um, e seja o caso de identificar qual deles foi submetido ao servidor.</p>
+    <p>Os exemplos abaixo têm como fonte o W3Schools.</p>
+    <hr>
+
+    <h2 class="title">Rótulos</h2>
+    <p>São usados juntamente com os campos de input em um formulário. Clicar no rótulo leva ao preenchimento do referido input.</p>
+    <p>São úteis em questão de acessibilidade, com softwares leitores de tela.</p>
+    <p>O atributo "for" do rótulo deve ser igual ao "id" do input a que se refere.</p>
+    <hr>
+
+    <form action="/example-form-handler.php">
+        <b>Exemplo de input do tipo "text":</b>
+        <br>
+        <br>
+        <input type="text" name="example-input-text" id="example-input-text">
+        <label for="example-input-text">Este é o label ("rótulo") para o input de texto.</label>
+        <br>
+        <br>
+        <b>Exemplo de input do tipo "radio":</b>
+        <p>Este tipo de input deixa o usuário escolher UMA opção entre duas ou mais.</p>
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        <br>
+        <br>
+        <b>Exemplo de input do tipo "checkbox":</b>
+        <p>Este tipo de input deixa o usuário escolher NENHUMA OU MAIS DE UMA opção.</p>
+        <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
+        <label for="vehicle1"> I have a bike</label><br>
+        <input type="checkbox" id="vehicle2" name="vehicle2" value="Car">
+        <label for="vehicle2"> I have a car</label><br>
+        <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
+        <label for="vehicle3"> I have a boat</label>
+        <br>
+        <br>
+        <b>O input do tipo "submit":</b>
+        <p>Trata-se de um tipo particular, que serve para SUBMETER os dados preenchidos no formulário.</p>
+        <p>Geralmente aparece na forma de um botão.</p>
+        <p>Os dados são enviados a um "form handler", tipicamente um arquivo no servidor com um script para LIDAR com os dados recebidos.</p>
+        <p>O form-handler é especificado no atributo "action" do formulário.</p>
+        <input type="submit" value="Submit">
+    </form>
+</body>
+</html>

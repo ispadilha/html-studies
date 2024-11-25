@@ -64,6 +64,11 @@ summary {
     cursor: pointer;
 }
 
+label {
+    color: #555;
+    font-weight: bold;
+}
+
 .main-title {
     color: #333;
     display: flex;
