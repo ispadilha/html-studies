@@ -30,6 +30,7 @@
 
     <h2 class="title">Seleções:</h2>
     <p>Elemento usado para que o usuário escolha uma opção, semelhante ao que ocorre com os inputs do tipo "radio", porém aqui é na forma de uma lista "drop-down".</p>
+    <p>Pode-se agrupar opções semelhantes ou relacionadas, com a tag específica para isso.</p>
     <hr>
 
     <h2 class="title">Áreas de texto:</h2>
@@ -100,12 +101,23 @@
         <b>Exemplo de seleção:</b>
         <br>
         <br>
-        <select id="cars" name="cars">
-          <option value="volvo">Volvo</option>
-          <option value="saab">Saab</option>
-          <option value="fiat">Fiat</option>
-          <option value="audi">Audi</option>
-        </select> 
+        <select id="carros" name="carro">
+            <optgroup label="Carros Esportivos">
+                <option value="ferrari">Ferrari</option>
+                <option value="lamborghini">Lamborghini</option>
+                <option value="porsche">Porsche</option>
+            </optgroup>
+            <optgroup label="Carros Familiares">
+                <option value="volvo">Volvo</option>
+                <option value="toyota">Toyota</option>
+                <option value="honda">Honda</option>
+            </optgroup>
+            <optgroup label="Carros Elétricos">
+                <option value="tesla">Tesla</option>
+                <option value="nissan-leaf">Nissan Leaf</option>
+                <option value="chevy-bolt">Chevy Bolt</option>
+            </optgroup>
+        </select>
         <br>
         <br>
         <b>Exemplo de área de texto:</b>
@@ -126,7 +138,7 @@
         <br>
         <br>
         <fieldset>
-            <legend>Dados pessoais:</legend>
+            <legend>Dados pessoais</legend>
             <label for="pnome">Primeiro nome:</label><br>
             <input type="text" id="pnome" name="pnome" value="Fulano"><br>
             <label for="snome">Sobrenome:</label><br>
@@ -145,6 +157,21 @@
           <option value="Opera">
           <option value="Safari">
         </datalist>
+        <br>
+        <br>
+        <b>Exemplo de "output":</b>
+        <br>
+        <br>
+        <fieldset
+        oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+        <legend>Aqui também é usado "fieldset"</legend>
+        0
+        <input type="range"  id="a" name="a" value="50">
+        100 +
+        <input type="number" id="b" name="b" value="50">
+        =
+        <output name="x" for="a b"></output>
+      </fieldset> 
     </form>
 </body>
 </html>
