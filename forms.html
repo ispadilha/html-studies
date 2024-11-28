@@ -60,7 +60,7 @@
     <p>Exibem SAÍDA de algum cálculo ou script.</p>
     <hr>
 
-    <h2 class="title">Formulário de exemplo, com os elementos apresentados acima:</h2>
+    <h2 class="title">Formulário de exemplo, com os elementos apresentados acima:</h2><br>
 
     <form action="/example-form-handler.php">
         <b>Exemplo de input do tipo "text":</b>
@@ -68,6 +68,22 @@
         <br>
         <input type="text" name="example-input-text" id="example-input-text">
         <label for="example-input-text">Este é o label ("rótulo") para o input de texto.</label>
+        <br>
+        <br>
+        <br>
+        <b>Exemplo de input do tipo "password":</b>
+        <br>
+        <br>
+        <input type="password" name="example-input-password" id="example-input-password">
+        <label for="example-input-password">Label ("rótulo") para o input de senha (password).</label>
+        <br>
+        <br>
+        <br>
+        <b>Exemplo de input do tipo "reset":</b>
+        <p>Reinicializa os valores dos campos do formulário. Assim como o input do tipo "submit", este também não exige o atributo "name" para funcionar.</p>
+        <p>Também é um tipo que dispensa o uso de "label".</p>
+        <input type="reset" name="example-input-reset" id="example-input-reset">
+        <br>
         <br>
         <br>
         <b>Exemplo de input do tipo "radio":</b>
@@ -80,6 +96,7 @@
         <label for="javascript">JavaScript</label>
         <br>
         <br>
+        <br>
         <b>Exemplo de input do tipo "checkbox":</b>
         <p>Este tipo de input deixa o usuário escolher NENHUMA OU MAIS DE UMA opção.</p>
         <input type="checkbox" id="vehicle1" name="vehicle1" value="Bike">
@@ -88,6 +105,131 @@
         <label for="vehicle2"> I have a car</label><br>
         <input type="checkbox" id="vehicle3" name="vehicle3" value="Boat">
         <label for="vehicle3"> I have a boat</label>
+        <br>
+        <br>
+        <br>
+        <b>Exemplo de input do tipo "button":</b>
+        <br>
+        <br>
+        <input type="button" onclick='alert("<input type=\"button\"> funciona parecido com <button>")' value="Clique-me">
+        <br>
+        <br>
+        <br>
+        <b>Exemplo de input do tipo "color":</b>
+        <br>
+        <br>
+        <label for="example-input-color">Selecione uma cor:</label>
+        <input type="color" id="example-input-color" name="example-input-color">
+        <br>
+        <br>
+        <br>
+        <b>Exemplo de input do tipo "date":</b>
+        <br>
+        <br>
+        <label for="example-input-date">Aniversário:</label>
+        <input type="date" id="example-input-date" name="example-input-date">
+        <br>
+        <br>
+        <br>
+        <b>Exemplo de input do tipo "datetime-local":</b>
+        <br>
+        <br>
+        <label for="example-input-datetime-local">Birthday (date and time):</label>
+        <input type="datetime-local" id="example-input-datetime-local" name="example-input-datetime-local">
+        <br>
+        <br>
+        <br>
+        <b>Exemplo de input do tipo "email":</b>
+        <br>
+        <br>
+        <label for="example-input-email">Enter your e-mail:</label>
+        <input type="email" id="example-input-email" name="example-input-email">
+        <br>
+        <br>
+        <br>
+        <b>Exemplo de input do tipo "image":</b>
+        <p>Define uma imagem como um botão de envio, e funciona como um input do tipo "submit".</p>
+        <p>Não confundir com input de envio de arquivo, que pode ser um arquivo de imagem.</p>
+        <input type="image" src="./example_input_image.png" alt="Exemplo de input do tipo 'image'" width="70" height="70">
+        <br>
+        <br>
+        <br>
+        <b>Exemplo de input do tipo "file":</b>
+        <p>Possibilita a escolha de um arquivo para ser enviado.</p>
+        <label for="example-input-file">Selecione um arquivo:</label>
+        <input type="file" id="example-input-file" name="example-input-file">
+        <br>
+        <br>
+        <br>
+        <b>Input do tipo "hidden":</b>
+        <p>É um tipo de campo de input que não é visível para usuários.</p>
+        <p>Permite que desenvolvedores incluam dados que não são visíveis ou alteráveis por usuários.</p>
+        <p>É bastante utilizado para especificar dados de destino de bancos de dados, por exemplo.</p>
+        <p>Os dados são visíveis e alteráveis em DevTools, por exemplo. Não deve-se utilizar com fins de segurança.</p>
+        <input type="hidden" id="customerId" name="customerId" value="3487">
+        <br>
+        <b>Exemplo de input do tipo "month":</b>
+        <br>
+        <br>
+        <label for="example-input-month">Birthday (month and year):</label>
+        <input type="month" id="example-input-month" name="example-input-month">
+        <br>
+        <br>
+        <br>
+        <b>Exemplo de input do tipo "number":</b>
+        <br>
+        <br>
+        <label for="example-input-number">Quantidade (de 1 a 5):</label>
+        <input type="number" id="example-input-number" name="example-input-number" min="1" max="5">
+        <br>
+        <br>
+        <br>
+        <b>Exemplo de input do tipo "range":</b>
+        <br>
+        <br>
+        <label for="example-input-range">Volume (de 1 a 50):</label>
+        <input type="range" id="example-input-range" name="example-input-range" min="0" max="50">
+        <br>
+        <br>
+        <br>
+        <b>Exemplo de input do tipo "search":</b>
+        <p>Funciona parecido com o tipo texto, mas tem o sentido semântico de busca.</p>
+        <br>
+        <label for="example-input-search">Search Google:</label>
+        <input type="search" id="example-input-search" name="example-input-search">
+        <br>
+        <br>
+        <br>
+        <b>Exemplo de input do tipo "tel":</b>
+        <br>
+        <br>
+        <label for="example-input-tel">Digite seu número de telefone:</label>
+        <input type="tel" id="example-input-tel" name="example-input-tel" placeholder="99999-9999" pattern="[0-9]{5}-[0-9]{4}">
+        <br>
+        <br>
+        <br>
+        <b>Exemplo de input do tipo "time":</b>
+        <br>
+        <br>
+        <label for="example-input-time">Selecione um horário:</label>
+        <input type="time" id="example-input-time" name="example-input-time">
+        <br>
+        <br>
+        <br>
+        <b>Exemplo de input do tipo "url":</b>
+        <br>
+        <br>
+        <label for="example-input-url">Insira a URL:</label>
+        <input type="url" id="example-input-url" name="example-input-url">
+        <br>
+        <br>
+        <br>
+        <b>Exemplo de input do tipo "week":</b>
+        <p>Pode abrir uma seleção de data, dependendo do navegador.</p>
+        <br>
+        <label for="example-input-week">Selecione a semana:</label>
+        <input type="week" id="example-input-week" name="example-input-week">
+        <br>
         <br>
         <br>
         <b>O input do tipo "submit":</b>
@@ -131,7 +273,7 @@
         <b>Exemplo de botão:</b>
         <br>
         <br>
-        <button type="button" id="example-button" onclick="alert('alert')">Clique aqui</button>
+        <button type="button" id="example-button" onclick='alert("<button> funciona parecido com <input type=\"button\">")'>Clique aqui</button>
         <br>
         <br>
         <b>Exemplo de "fieldset" e sua legenda:</b>
