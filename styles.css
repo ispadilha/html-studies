@@ -22,10 +22,6 @@ footer {
     align-items: center;
 }
 
-.flex-div {
-    display: flex;
-}
-
 nav {
     width: 200px;
     background-color: #dedede;
@@ -38,7 +34,7 @@ nav ul {
 }
 
 nav ul li {
-    margin: 15px 0;
+    margin: 20px 0;
 }
 
 nav ul li a {
@@ -53,19 +49,18 @@ nav ul li a:hover {
 
 aside {
     height: 100%;
-    background-color: #dedede;
-    margin: 20px;
+    background-color: #fefefe;
     padding: 20px;
-    text-align: center;
-    border: 10px double white;
+    border: 10px double #555;
 }
 
-.aside-example {
+#aside-example {
+    text-align: center;
     width: 1000px;
 }
 
-.aside-form {
-    width: 50%;
+#aside-form {
+    width: 100%;
 }
 
 summary {
@@ -75,6 +70,14 @@ summary {
 label {
     color: #555;
     font-weight: bold;
+}
+
+.flex-div {
+    display: flex;
+}
+
+.inner-flex-div {
+    gap: 10px;
 }
 
 .main-title {

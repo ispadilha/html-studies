@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-    <div class="flex-div">
+    <div class="flex-div inner-flex-div">
         <section title="section">
             <h2 class="title">Formulários:</h2>
             <p>São usados para receber dados do usuário.</p>
@@ -21,7 +21,7 @@
             <p>É importante notar que eles precisam do atributo "name" para que seus dados sejam corretamente identificados ao serem enviados.</p>
             <p>Uma exceção é o input do tipo "submit", que funciona sem o atributo "name", principalmente se for único.</p>
             <p>Este tipo de input pode ter atributo "name", principalmente se houver mais de um, e seja o caso de identificar qual deles foi submetido ao servidor.</p>
-            <p>Os exemplos, no formulário ao final desta página, têm como fonte o W3Schools.</p>
+            <p>Os exemplos, no formulário que pode ser visto ao lado, têm como fonte o W3Schools.</p>
             <hr>
             <h2 class="title">Rótulos:</h2>
             <p>São usados juntamente com os campos de input em um formulário. Clicar no rótulo leva ao preenchimento do referido input.</p>
@@ -52,11 +52,10 @@
             <hr>
             <h2 class="title">"Outputs":</h2>
             <p>Exibem SAÍDA de algum cálculo ou script.</p>
-            <hr>
         </section>
 
-        <aside title="aside" class="aside-form">
-            <h2 class="title">Formulário de exemplo, com os elementos apresentados acima:</h2><br>
+        <aside title="aside" id="aside-form">
+            <h2 class="title">Formulário de exemplo, com os elementos apresentados:</h2><br>
             <form action="/example-form-handler.php">
                 <b>Exemplo de input do tipo "text":</b>
                 <br>
