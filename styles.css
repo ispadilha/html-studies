@@ -53,11 +53,19 @@ nav ul li a:hover {
 
 aside {
     height: 100%;
-    width: 400px;
     background-color: #dedede;
+    margin: 20px;
     padding: 20px;
     text-align: center;
     border: 10px double white;
+}
+
+.aside-example {
+    width: 1000px;
+}
+
+.aside-form {
+    width: 50%;
 }
 
 summary {
