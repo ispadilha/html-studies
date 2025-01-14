@@ -52,14 +52,15 @@ aside {
     background-color: #fefefe;
     padding: 20px;
     border: 10px double #555;
+    width: 100%;
 }
 
 #aside-example {
     text-align: center;
-    width: 1000px;
 }
 
-#aside-form {
+#iframe-form {
+    height: 100%;
     width: 100%;
 }
 
@@ -77,6 +78,7 @@ label {
 }
 
 .inner-flex-div {
+    height: 100%;
     gap: 10px;
 }
 
