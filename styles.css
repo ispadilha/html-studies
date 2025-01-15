@@ -16,9 +16,9 @@ header {
 }
 
 main {
+    flex: 1;
     background-color: #eeeeee;
     padding: 10px;
-    flex: 1;
 }
 
 footer {

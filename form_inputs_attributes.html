@@ -6,6 +6,69 @@
     <title>Atributos de inputs</title>
 </head>
 <body>
-    <p>Nesta página leremos sobre atributos de inputs.</p>
+    <h2>Atributos de inputs</h2>
+    <p>Os exemplos abaixo têm como fonte o W3Schools.</p>
+    <br>
+    <br>
+    <b>O atributo "value":</b>
+    <p>Especifica um valor inicial, previamente preenchido.</p>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John"><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe">
+    <br>
+    <br>
+    <br>
+    <b>O atributo "readonly":</b>
+    <p>Define o campo como sendo de somente leitura. O conteúdo não pode ser modificado, mas pode ser focado e selecionado.</p>
+    <p>O valor de um campo read-only será enviado normalmente com a submissão do formulário.</p>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John" readonly><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe">
+    <br>
+    <br>
+    <br>
+    <b>O atributo "disabled":</b>
+    <p>Desabilita um campo. Seu conteúdo não pode ser focado.</p>
+    <p>O valor de um campo desabilitado não será enviado com a submissão do formulário.</p>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" value="John" disabled><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname" value="Doe">
+    <br>
+    <br>
+    <br>
+    <b>O atributo "size":</b>
+    <p>Especifica a largura vísivel de um campo, em caracteres. O valor padrão é 20.</p>
+    <p>Funciona com os seguintes tipos de inputs: text, search, tel, url, email, password.</p>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" size="50"><br>
+    <label for="pin">PIN:</label><br>
+    <input type="text" id="pin" name="pin" size="4">
+    <br>
+    <br>
+    <br>
+    <b>O atributo "maxlength":</b>
+    <p>Especifica o número máximo de caracteres permitidos em um campo.</p>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" size="50"><br>
+    <label for="pin">PIN:</label><br>
+    <input type="text" id="pin" name="pin" maxlength="4" size="4">
+    <br>
+    <br>
+    <br>
+    <b>Os atributos "min" e "max":</b>
+    <p>Definem valores mínimos e máximos para um campo.</p>
+    <p>Funcionam com os seguintes tipos de inputs: number, range, date, datetime-local, month, time, week.</p>
+    <label for="datemax">Enter a date before 1980-01-01:</label>
+    <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+    <label for="datemin">Enter a date after 2000-01-01:</label>
+    <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+    <label for="quantity">Quantity (between 1 and 5):</label>
+    <input type="number" id="quantity" name="quantity" min="1" max="5">
+    <br>
+    <br>
+    <br>
 </body>
 </html>
