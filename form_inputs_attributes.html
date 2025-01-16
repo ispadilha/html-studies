@@ -41,7 +41,7 @@
     <br>
     <b>O atributo "size":</b>
     <p>Especifica a largura vísivel de um campo, em caracteres. O valor padrão é 20.</p>
-    <p>Funciona com os seguintes tipos de inputs: text, search, tel, url, email, password.</p>
+    <p>Funciona com os seguintes tipos de input: text, search, tel, url, email, password.</p>
     <label for="fname">First name:</label><br>
     <input type="text" id="fname" name="fname" size="50"><br>
     <label for="pin">PIN:</label><br>
@@ -60,13 +60,63 @@
     <br>
     <b>Os atributos "min" e "max":</b>
     <p>Definem valores mínimos e máximos para um campo.</p>
-    <p>Funcionam com os seguintes tipos de inputs: number, range, date, datetime-local, month, time, week.</p>
+    <p>Funcionam com os seguintes tipos de input: number, range, date, datetime-local, month, time, week.</p>
     <label for="datemax">Enter a date before 1980-01-01:</label>
     <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
     <label for="datemin">Enter a date after 2000-01-01:</label>
     <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
     <label for="quantity">Quantity (between 1 and 5):</label>
     <input type="number" id="quantity" name="quantity" min="1" max="5">
+    <br>
+    <br>
+    <br>
+    <b>O atributo "multiple":</b>
+    <p>Especifica que o usuário pode colocar mais de um valor no campo.</p>
+    <p>Funciona com os seguintes tipos de input: email, file.</p>
+    <label for="files">Select files:</label>
+    <input type="file" id="files" name="files" multiple>
+    <br>
+    <br>
+    <br>
+    <b>O atributo "pattern":</b>
+    <p>Define uma expressão regular para checar o valor do campo, quando o formulário é submetido.</p>
+    <p>Uma "expressão regular" é uma sequência de caracteres que define um padrão de busca.</p>
+    <p>Funciona com os seguintes tipos de input: text, date, search, url, tel, email, password.</p>
+    <label for="country_code">Country code:</label>
+    <input type="text" id="country_code" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+    <br>
+    <br>
+    <br>
+    <b>O atributo "placeholder":</b>
+    <p>Define uma "dica" de preenchimento do campo, que o ocupa antes do usuário preencher.</p>
+    <p>Funciona com os seguintes tipos de input: text, search, url, number, tel, email, password.</p>
+    <label for="phone">Enter a phone number:</label>
+    <input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+    <br>
+    <br>
+    <br>
+    <b>O atributo "required":</b>
+    <p>Determina que um campo é de preenchimento obrigatório, para poder ocorrer a submissão do formulário.</p>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" required>
+    <br>
+    <br>
+    <br>
+    <b>O atributo "step":</b>
+    <p>Define o intervalo entre valores que podem ser colocados em um campo.</p>
+    <p>Funciona com os seguintes tipos de input: number, range, date, datetime-local, month, time, week.</p>
+    <p>É importante saber que esta restrição pode ser contornada usando-se JavaScript, portanto a mesma restrição deve ser checada no lado do servidor.</p>
+    <label for="points">Points:</label>
+    <input type="number" id="points" name="points" step="3">
+    <br>
+    <br>
+    <br>
+    <b>O atributo "autofocus":</b>
+    <p>Determina que o campo deve ser automaticamente focado assim que a página carregar.</p>
+    <label for="fname">First name:</label><br>
+    <input type="text" id="fname" name="fname" autofocus><br>
+    <label for="lname">Last name:</label><br>
+    <input type="text" id="lname" name="lname">
     <br>
     <br>
     <br>
