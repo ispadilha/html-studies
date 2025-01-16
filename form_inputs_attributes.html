@@ -120,5 +120,30 @@
     <br>
     <br>
     <br>
+    <b>Os atributos "height" e "width":</b>
+    <p>Especificam altura e largura de uma imagem usada como input de submissão de formulário.</p>
+    <input type="image" src="./example_input_image.png" id="ex-image" alt="Exemplo de input do tipo 'image'" width="70" height="70">
+    <br>
+    <br>
+    <br>
+    <b>O atributo "list":</b>
+    <p>Referencia um elemento "datalist" que contém opções pré-definidas para o input com este atributo.</p>
+    <input list="browsers">
+    <datalist id="browsers">
+      <option value="Edge">
+      <option value="Firefox">
+      <option value="Chrome">
+      <option value="Opera">
+      <option value="Safari">
+    </datalist>
+    <br>
+    <br>
+    <br>
+    <b>O atributo "autocomplete":</b>
+    <p>Define se um formulário ou input deve ter seu preenchimento automático sugerido, pelo navegador, com base em dados fornecidos anteriormente.</p>
+    <p>Funciona com o elemento "form" e com os seguintes tipos de input: text, search, url, tel, email, password, datepickers, range, color</p>
+    <p>É importante saber que esta função pode depender de configurações do navegador.</p>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" autocomplete>
 </body>
 </html>
