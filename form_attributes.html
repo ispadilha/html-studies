@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atributos form*</title>
+</head>
+<body>
+    <h2>Atributos form*</h2>
+    <p>Os exemplos abaixo têm como fonte o W3Schools.</p>
+    <br>
+    <br>
+    <b>O atributo "form":</b>
+    <p>Especifica a qual form pertence o input, para quando este não estiver dentro daquele, por algum motivo.</p>
+    <form action="/action_page.php" id="form1">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br>
+        <input type="submit" value="Submit">
+    </form>
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" name="lname" form="form1">
+    <br>
+    <br>
+    <br>
+    <b>O input "formaction":</b>
+    <p>Especifica a URL do arquivo que irá processar a submissão do formulário, criando precedência sobre o atributo "action" do form.</p>
+    <p>Funciona com os seguintes tipos de input: submit, image.</p>
+    <form action="/action_page.php">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formaction="/action_page2.php" value="Submit as Admin">
+    </form> 
+    <br>
+    <br>
+    <br>
+    <b>O atributo "formenctype":</b>
+    <p>Especifica a forma de codificação dos dados do formulário, ao serem enviados. Cria precedência sobre o atributo "enctype" do form.</p>
+    <p>Destina-se apenas a forms com method="post".</p>
+    <p>Funciona com os seguintes tipos de input: submit, image.</p>
+    <form action="/action_page_binary.asp" method="post">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <input type="submit" value="Submit">
+        <input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data">
+    </form>
+    <br>
+    <br>
+    <br>
+    <b>O atributo "formmethod":</b>
+    <p>Define o método HTTP, para o envio dos dados do formulário, à action URL. Cria precedência sobre o atributo "method" do form.</p>
+    <p>Funciona com os seguintes tipos de input: submit, image.</p>
+    <p>Os dados podem ser enviados na URL (method="get") ou como uma transação HTTP post (method="post")</p>
+    <p>É importante saber que o método "get" adiciona dados à URL, que possui limite de tamanho, e não deve ser usado com informações sensíveis.
+        Este método é útil para quando o usuário quer fazer um bookmark com o resultado, por exemplo.
+    </p>
+    <p>O método "post" é mais robusto e seguro, e não tem limite de tamanho. Diferentemente do caso acima, não permite que se faça bookmark do resultado.</p>
+    <form action="/action_page.php" method="get">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname"><br><br>
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname"><br><br>
+        <input type="submit" value="Submit using GET">
+        <input type="submit" formmethod="post" value="Submit using POST">
+      </form> 
+</body>
+</html>
