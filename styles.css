@@ -33,7 +33,14 @@ nav {
     width: 200px;
     background-color: #dedede;
     padding: 10px;
+}
+
+.main-nav {
     border-right: 2px solid #555;
+}
+
+.graphics-nav {
+    border: 2px solid #555;
 }
 
 nav ul {
@@ -82,7 +89,18 @@ aside {
     flex: 1;
 }
 
+#iframe-graphics {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
 #aside-form {
+    display: flex;
+    flex-direction: column;
+}
+
+#aside-graphics {
     display: flex;
     flex-direction: column;
 }
