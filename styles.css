@@ -171,3 +171,13 @@ aside {
     background-color: black;
     color: white
 }
+
+canvas {
+    border:1px solid #000000;
+}
+
+.image-canvas-demonstration {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}

@@ -11,9 +11,44 @@
 <body>
     
     <h2 class="title">Canvas:</h2>
-    <p>Aqui estudaremos as tags relacionadas aos chamados "canvas".</p>
+    <p>Esta tag é usada para criar elementos gráficos com o uso de Javascript.</p>
+    <p>Um elemento canvas é simplesmente uma área retangular numa página HTML, que por padrão não tem bordas nem conteúdo.</p>
+    <p>Para exibir os gráficos, é necessário que seja por Javascript.</p>
     <hr>
 
+    <h3 class="title">Exemplos:</h3>
+
+    <p>Elemento vazio, com apenas uma borda colocada por CSS:</p>
+    <canvas id="canvas-0-vazio" width="200" height="100"></canvas>
+    
+    <p>Desenhando uma linha:</p>
+    <canvas id="canvas-1-linha" width="200" height="100"></canvas>
+    
+    <p>Desenhando um círculo:</p>
+    <canvas id="canvas-2-circulo" width="200" height="100"></canvas>
+    
+    <p>Inserindo texto:</p>
+    <canvas id="canvas-3-texto" width="200" height="100"></canvas>
+    
+    <p>Inserindo texto com stroke:</p>
+    <canvas id="canvas-4-texto-stroke" width="200" height="100"></canvas>
+    
+    <p>Desenhando um gradiente linear:</p>
+    <canvas id="canvas-5-gradiente-linear" width="200" height="100"></canvas>
+
+    <p>Desenhando um gradiente circular:</p>
+    <canvas id="canvas-6-gradiente-circular" width="200" height="100"></canvas>
+
+    <p>Inserindo esta imagem de um arquivo:</p>
+    <div class="image-canvas-demonstration">
+        <img id="scream" src="img_the_scream.jpg" alt="The Scream" width="220" height="277">
+        <button onclick="imageCanvas()">Clique aqui</button>
+        <canvas id="canvas-7-imagem" width="250" height="300"
+        style="border:1px solid #d3d3d3;">
+        Your browser does not support the HTML canvas tag.</canvas>
+    </div>
+
+    <script src="canvas.js"></script>
 </body>
 
 </html>
