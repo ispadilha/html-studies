@@ -87,12 +87,14 @@ aside {
     display: flex;
     flex-direction: column;
     flex: 1;
+    padding: 10px;
 }
 
 #iframe-graphics {
     display: flex;
     flex-direction: column;
     flex: 1;
+    padding: 10px;
 }
 
 #aside-form {
