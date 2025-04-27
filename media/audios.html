@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Áudios</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+
+<body>
+    
+    <h2 class="title">Áudios:</h2>
+    <p>De forma semelhante aos vídeos, as tags de áudio em HTML também recebem outras tags para especificar possíveis caminhos para arquivos do referido áudio.</p>
+    <p>O navegador irá utilizar o primeiro arquivo válido dentre os especificados.</p>
+    <audio controls>
+        <source src="horse.ogg" type="audio/ogg">
+        <source src="horse.mp3" type="audio/mpeg">
+        <!-- O texto dentro da tag só será exibido quando o navegador não tiver suporte ao elemento de áudio. -->
+      Your browser does not support the audio element.
+      </audio>
+      <p>Áudio de exemplo copiado do W3Schools.</p>
+      <p>A tag de áudio possui atributos importantes, para diferentes finalidades:</p>
+      <ul>
+        <li>exibir botões e outros controles</li>
+        <li>determinar reprodução automática</li>
+        <li>mutar a reprodução automática, o que é exigido por alguns navegadores</li>
+        <p>(mutar para viabilizar a reprodução automática: é útil no caso de vídeos, mas áudios são praticamente inutilizados)</p>
+      </ul>
+    <hr>
+
+    <h2 class="title">Formatos suportados:</h2>
+    <p>São 3 os formatos de áudio suportados em elementos HTML:</p>
+    <ul>
+        <li>mp3</li>
+        <li>wav</li>
+        <li>ogg</li>
+    </ul>
+    <hr>
+
+    <h2 class="title">Elementos de áudio no DOM:</h2>
+    <p>Assim como ocorre com elementos de vídeo, no DOM, elementos de áudio também ganham métodos, propriedades e eventos próprios. Isso permite que seus controles sejam manipulados por JavaScript também.</p>
+    <hr>
+
+</body>
+
+</html>

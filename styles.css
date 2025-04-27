@@ -39,7 +39,7 @@ nav {
     border-right: 2px solid #555;
 }
 
-.graphics-nav {
+.inner-nav {
     border: 2px solid #555;
 }
 
@@ -83,6 +83,11 @@ aside {
     text-align: center;
 }
 
+.inner-aside {
+    display: flex;
+    flex-direction: column;
+}
+
 #iframe-form {
     display: flex;
     flex-direction: column;
@@ -90,7 +95,7 @@ aside {
     padding: 10px;
 }
 
-#iframe-graphics {
+.inner-iframe {
     display: flex;
     flex-direction: column;
     flex: 1;
@@ -98,11 +103,6 @@ aside {
 }
 
 #aside-form {
-    display: flex;
-    flex-direction: column;
-}
-
-#aside-graphics {
     display: flex;
     flex-direction: column;
 }
