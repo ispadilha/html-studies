@@ -12,6 +12,50 @@
     
     <h2 class="title">Outros casos e tipos de mídia:</h2>
     <p>Nesta seção, estudaremos outros tipos de mídia em relação a HTML.</p>
+    <hr>
+
+    <h2 class="title">Plug-ins:</h2>
+    <p>São como pequenos programas que rodam dentro do navegador, extendendo suas funcionalidades.</p>
+    <p>Alguns exemplos de plug-ins antigos, e atualmente descontinuados:</p>
+    <ul>
+        <li>Java Applets</li>
+        <li>ActiveX Controls</li>
+        <li>Shockwave Flash</li>
+    </ul>
+    <p>E alguns exemplos atuais:</p>
+    <ul>
+        <li>mapas</li>
+        <li>checagens de vírus</li>
+        <li>verificações de identidade</li>
+        <li>leitores de arquivos PDF</li>
+    </ul>
+    <hr>
+
+    <h2 class="title">Objetos integrados</h2>
+    <p>Não confundir com objetos em contexto de programação orientada a objetos.</p>
+    <p>Em HTML, objetos integrados são elementos com tags próprias, criadas com a finalidade de receber plug-ins.</p>
+    <p>Eles podem, no entanto, receber diversos outros tipos de elementos, como imagens, ou até outro arquivo HTML.</p>
+    <p>Existem duas tags distintas que podem ser usadas para estes elementos, exemplificadas abaixo.</p>
+    <object width="300px" data="exemplo-object.png">Diferentemente da tag embed, a tag object aceita texto alternativo.</object>
+    <embed width="300px" src="exemplo-embed.png">
+    <hr>
+
+    <h2 class="title">YouTube</h2>
+    <p>No momento de produção deste documento, o youtube é uma plataforma privada de grande alcance, que pode facilitar a incorporação de vídeos em HTML.</p>
+    <p>Isso é feito usando um elemento iframe, cujo atributo src recebe a URL do vídeo no youtube.</p>
+    <p>Este elemento poderá receber atributos e definições como:</p>
+    <ul>
+        <li>reprodução automática</li>
+        <li>mutar a reprodução automática (isso é exigido por alguns navegadores)</li>
+        <li>definir uma playlist</li>
+        <li>reprodução em loop</li>
+        <li>exibir opções de controle</li>
+    </ul>
+    <iframe width="420" height="315"
+    src="https://www.youtube.com/watch?v=dQw4w9WgXcQ?playlist=dQw4w9WgXcQ&loop=1">
+    </iframe>
+    <p>Pode não ser possível exibir ou reproduzir o conteúdo, devido a questões de segurança relacionadas ao conteúdo de um site incorporado em outro.</p>
+    <p>(Isso é possível mas possui exigências técnicas.)</p>
 
 </body>
 
